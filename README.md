@@ -2,6 +2,10 @@
 
 Ứng dụng React Native + Expo (TypeScript), lưu local bằng AsyncStorage.
 
+## Video demo
+
+[Xem hoặc tải video demo](videos/demo.mp4)
+
 ## Chạy ứng dụng
 
 ```sh
