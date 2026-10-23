@@ -1,0 +1,61 @@
+{
+  "expo": {
+    "name": "Student Manager",
+    "slug": "btbuoi4",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.btbuoi4.studentmanager",
+      "infoPlist": {
+        "CFBundleAllowMixedLocalizations": true
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "backgroundColor": "#E6F4FE",
+        "foregroundImage": "./assets/android-icon-foreground.png",
+        "backgroundImage": "./assets/android-icon-background.png",
+        "monochromeImage": "./assets/android-icon-monochrome.png"
+      },
+      "predictiveBackGestureEnabled": false,
+      "package": "com.btbuoi4.studentmanager"
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      [
+        "expo-localization",
+        {
+          "supportedLocales": {
+            "android": [
+              "vi",
+              "en"
+            ],
+            "ios": [
+              "vi",
+              "en"
+            ]
+          }
+        }
+      ],
+      [
+        "expo-image-picker",
+        {
+          "cameraPermission": false,
+          "photosPermission": "Allow access to choose a student avatar.",
+          "microphonePermission": false
+        }
+      ],
+      "./plugins/withLocalizedName.js",
+      "expo-router"
+    ],
+    "locales": {
+      "vi": "./locales/vi.json",
+      "en": "./locales/en.json"
+    }
+  }
+}
